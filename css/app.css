@@ -68,7 +68,7 @@ header.main_header {
 img {
 	max-width: 100%;
 }
-.portfolio img,
+div.portfolio img,
 img.avatar {
 	transition: all .35s ease-in-out;
 	-webkit-backface-visibility: hidden;
@@ -78,7 +78,7 @@ img.avatar{
 	border-radius: 50%;
 	border: 5px solid #fff;
 }
-.portfolio:hover img,
+div.portfolio:hover img,
 img.avatar:hover {
 	opacity: .8;
 }
@@ -112,16 +112,28 @@ p.copyright{
 	color: #666;
 	font-size: 1em;
 }
+div#back-to-top {
+	position: absolute;
+    bottom: 27px;
+    text-align: right;
+}
+div#back-to-top a {
+	color: #bbb;
+	transition: all .35s ease-in-out;
+}
+div#back-to-top a:hover {
+	color: #7accc8;
+}
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Mobile */
-@media (max-width: 479px) {
+@media (max-width: 549px) {
 	.logo a{font-size: 2em;}
 	.main {padding-top: 15%;}
 	.row{padding: 0;}
 	.center {text-align: center;}
-	.portfolio img{margin-bottom: 10%;}
+	.portfolio img{margin-bottom: 5%;}
 	img.avatar{margin-top: 15%; width: 80%;}
 	h2.bio{font-size: 2em;}
 	p.bio{font-size: 1.25em; color: #3f7f7c;}
